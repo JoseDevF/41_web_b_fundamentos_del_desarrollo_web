@@ -1,0 +1,88 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-outline {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: transparent;
+    color: #007bff;
+    padding: 10px;
+    width: 64px;
+    height: 64px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn:active {
+    background-color: #003f7f;
+    transform: scale(0.9);
+}
+
+.btn {
+    transition: transform 0.5s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateX(30px) rotateZ(20deg);
+}
+
+
+.btn::before {
+    content: "";
+    display: inline-block;
+    background-image: url('./assets/trash.png');
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.btn-3d {
+    background: linear-gradient(145deg, #969696, #f3f3f3);
+    box-shadow: 5px 5px 10px #b1b1b1, -5px -5px 10px #ffffff;
+    border-radius: 10px;
+    width: 100px;
+    height: 60px;
+}
+
+.btn-3d:active {
+    box-shadow: inset 5px 5px 10px #b1b1b1, inset -5px -5px 10px #ffffff;
+}

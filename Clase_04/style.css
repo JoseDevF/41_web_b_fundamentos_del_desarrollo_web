@@ -52,9 +52,9 @@ body{
 
 .container_flex{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
     background-color: lightgray;
     padding: 10px;
