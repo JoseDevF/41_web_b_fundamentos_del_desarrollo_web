@@ -37,9 +37,17 @@ a {
     height: 64px;
     font-size: 16px;
     border: 2px solid #007bff;
-    border-radius: 100%;
+    border-radius: 50%;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: normal; /* Permite que el texto haga wrap */
 }
+
 
 .btn-outline:hover {
     background-color: #007bff;
