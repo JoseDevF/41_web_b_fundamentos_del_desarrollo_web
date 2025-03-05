@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.servicios, .casos {
+    padding: 2rem;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+}
+
+.social a, .terms a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header.scrolled {
+    background-color: #222;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #f4a261;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.image-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.image-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.image-card p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.image-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

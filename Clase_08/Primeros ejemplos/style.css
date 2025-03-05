@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.services {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+
+/* Estilos para la barra de navegación */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.store-locator {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.login, .join {
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.login {
+    background-color: white;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+.join {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-left, .nav-right {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .store-locator {
+        margin-bottom: 10px;
+    }
+}
+
+
